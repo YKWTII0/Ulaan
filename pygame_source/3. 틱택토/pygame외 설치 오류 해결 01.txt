@@ -1,0 +1,33 @@
+[pygame]pip install pygame 등 설치오류 해결방법
+작성자하늘바다|작성시간19.02.15|조회수1,710
+목록댓글 0글자크기 작게가글자크기 크게가
+pip install pygame  이나  pip install tkinter 
+
+
+
+'pip'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+ 
+배치 파일이 아닙니다.   오류가 나올 때 조치방법
+
+
+
+시작단추에서 프로그래명  cmd  를 쳐서 dos 화면으로 들어갑니다.
+
+
+
+영구적으로 해결 
+
+path=%path%C:\Users\사용자아이디\AppData\Local\Programs\Python\Python36\Scripts
+
+입력후  pip installl ~
+
+
+
+일시적으로 해결
+
+cd C:\Users\사용자아이디\AppData\Local\Programs\Python\Python36\Scripts
+
+입력후  pip installl ~
+
+
+

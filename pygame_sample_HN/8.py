@@ -219,15 +219,15 @@ def initGame():
     pygame.init()
     gamepad = pygame.display.set_mode((pad_width, pad_height))
     pygame.display.set_caption('PyFlying')    
-    aircraft = pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\plane.png")
-    background1 = pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\background.png")
+    aircraft = pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/plane.png")
+    background1 = pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/background.png")
     background2 = background1.copy()
-    bat = pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\bat.png")
+    bat = pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/bat.png")
     #-----------------> MODIFIED
-    fires.append((0, pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\fireball.png")))
-    fires.append((1, pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\fireball2.png")))
+    fires.append((0, pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/fireball.png")))
+    fires.append((1, pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/fireball2.png")))
     # ---------------->
-    boom = pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\boom.png")
+    boom = pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/boom.png")
 
 
     #-----------------> MODIFIED
@@ -235,7 +235,7 @@ def initGame():
     for i in range(5):
         fires.append((i+2, pygame.Surface((1, 1))))  # 1x1 크기의 빈 Surface 추가
 
-    bullet= pygame.image.load("C:\\Users\\USER\\Desktop\\몽골리아\\파이썬 게임\\images\\bullet.png")
+    bullet= pygame.image.load("/Users/uncledrew/Desktop/Ulaan/pygame_sample_HN/image/images/bullet.png")
     
     clock = pygame.time.Clock()
     runGame()

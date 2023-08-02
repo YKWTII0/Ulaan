@@ -1,10 +1,8 @@
-import pygame  # 1. pygame 선언
+import pygame
 import random
 import os
 
-pygame.init()  # 2. pygame 초기화
-
-# 3. pygame에 사용되는 전역변수 선언
+pygame.init()
 
 BLACK = (0, 0, 0)
 size = [600, 800]
@@ -14,7 +12,7 @@ done = False
 clock = pygame.time.Clock()
 
 def runGame():
-    bomb_image = pygame.image.load('/Users/uncledrew/Desktop/pygame_source/4. 폭탄 피하기/bomb.png')
+    bomb_image = pygame.image.load('/Users/uncledrew/Desktop/Ulaan/pygame_source/4. 폭탄 피하기/bomb.png')
     bomb_image = pygame.transform.scale(bomb_image, (50, 50))
     bombs = []
 
@@ -25,7 +23,7 @@ def runGame():
         dy = random.randint(3, 9)
         bombs.append({'rect': rect, 'dy': dy})
 
-    person_image = pygame.image.load('/Users/uncledrew/Desktop/pygame_source/4. 폭탄 피하기/person.png')
+    person_image = pygame.image.load('/Users/uncledrew/Desktop/Ulaan/pygame_source/4. 폭탄 피하기/shiba.png')
     person_image = pygame.transform.scale(person_image, (100, 100))
     person = pygame.Rect(person_image.get_rect())
     person.left = size[0] // 2 - person.width // 2
